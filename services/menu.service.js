@@ -18,7 +18,7 @@
           name: 'Beers',
           type: 'toggle',
           pages: [{
-            name: 'IPAs',
+            name: 'Cards',
             type: 'link',
             state: 'home.beers.ipas',
             icon: 'fa fa-group'
