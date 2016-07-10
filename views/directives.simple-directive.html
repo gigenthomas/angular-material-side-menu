@@ -1,0 +1,18 @@
+
+<h1>Simple Directive Page</h1>
+<div ng-controller="CustomerController">
+    <my-customer></my-customer>
+
+    <div>
+        Date format: <input ng-model="format"> <hr/>
+    </div>
+    Current time is: <span my-current-time="format"></span>
+</div>
+
+<level-one>
+    <level-two>
+        <level-three>
+            Hello {{name}}
+        </level-three>
+    </level-two>
+</level-one>
