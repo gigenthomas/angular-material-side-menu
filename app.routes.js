@@ -82,6 +82,35 @@
               }
             }
           })
+            .state('home.directives', {
+              url: 'directives',
+              abstract: true
+            })
+            .state('home.directives.simple', {
+              url: '/directives',
+
+              views: {
+
+                'content@home': {
+                  templateUrl: 'views/directives.simple-directive.html'
+                }
+              }
+            })
+
+            .state('home.trees', {
+              url: 'trees',
+              abstract: true
+            })
+            .state('home.trees.ivh', {
+              url: '/trees',
+
+              views: {
+
+                'content@home': {
+                  templateUrl: 'views/trees.ivh-tree.view.html'
+                }
+              }
+            })
       }])
     //take all whitespace out of string
     .filter('nospace', function () {
@@ -104,3 +133,5 @@
     });
 
 })();
+
+

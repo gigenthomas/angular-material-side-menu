@@ -58,6 +58,28 @@
             }]
         });
 
+        sections.push({
+          name: 'Directives',
+          type: 'toggle',
+          pages: [{
+            name: 'SimpleDirective',
+            type: 'link',
+            state: 'home.directives.simple',
+            icon: 'fa fa-group'
+          }]
+        });
+
+        sections.push({
+          name: 'Tree',
+          type: 'toggle',
+          pages: [{
+            name: 'ivh-tree',
+            type: 'link',
+            state: 'home.trees.ivh',
+            icon: 'fa fa-group'
+          }]
+        });
+
         var self;
 
         return self = {
