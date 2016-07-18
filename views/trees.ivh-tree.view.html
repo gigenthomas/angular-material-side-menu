@@ -1,3 +1,18 @@
 <div ng-controller="CustomerController">
     <my-customer></my-customer>
 </div>
+
+
+
+<div ng-controller="IvhController as fancy">
+    <input type="text" ng-model="bagSearch" />
+    <div
+            ivh-treeview="fancy.bag"
+            ivh-treeview-expand-to-depth="2"
+            ivh-treeview-filter="bagSearch"
+            ivh-treeview-use-checkboxes="false">
+
+    </div>
+</div>
+
+

@@ -66,7 +66,14 @@
             type: 'link',
             state: 'home.directives.simple',
             icon: 'fa fa-group'
-          }]
+          },
+
+            {
+              name: 'IsolateScope',
+              state: 'home.directives.isolate',
+              type: 'link',
+              icon: 'fa fa-map-marker'
+            }]
         });
 
         sections.push({

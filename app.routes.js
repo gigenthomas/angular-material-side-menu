@@ -10,6 +10,7 @@
     'ui.router',
     'ngMaterial',
     'ngAria',
+    'ivh.treeview'
 
   ])
     .config(function ($mdThemingProvider) {
@@ -96,6 +97,19 @@
                 }
               }
             })
+            .state('home.directives.isolate', {
+              url: '/directives',
+
+              views: {
+
+                'content@home': {
+                  templateUrl: 'views/directives.isolate-scope.html'
+                }
+              }
+            })
+
+
+
 
             .state('home.trees', {
               url: 'trees',
